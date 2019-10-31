@@ -91,6 +91,10 @@ class Person {
  * new vendor = new Vendor(name, x, y);
  **********************************************************/
 class Vendor extends Person {
+  /* We don't need to define a constructor because the Customer object
+    takes the same variables as Person, and since it extends Person, it'll auto 
+    pass these objects to the parent class.
+    */
   // implement Vendor!
   constructor(name, x, y) {
     super(name, x, y);
@@ -124,6 +128,10 @@ class Vendor extends Person {
  **********************************************************/
 class Customer extends Person {
   // implement Customer!
+  /* We don't need to define a constructor because the Customer object
+    takes the same variables as Person, and since it extends Person, it'll auto 
+    pass these objects to the parent class.
+    */
   constructor(name, x, y) {
     super(name, x, y);
   }
