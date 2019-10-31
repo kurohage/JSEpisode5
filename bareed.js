@@ -141,6 +141,8 @@ class Customer extends Person {
   requestIceCream = (vendor, numberOfIceCreams) => {
     if (this._isInRange(vendor) && this._haveEnoughMoney)
       vendor.sellTo(this, numberOfIceCreams);
+    else
+      console.log("Sorry, your money cannot buy all the icecreams you want.");
   };
 }
 
